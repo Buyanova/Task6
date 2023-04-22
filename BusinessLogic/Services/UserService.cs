@@ -8,9 +8,9 @@ namespace BusinessLogic.Services
         public UserService(IRepositoryWrapper repositoryWrapper)
         {
             _repositoryWrapper = repositoryWrapper;
-        }
+        }   
         public async Task<List<Pokupatel>> GetAll()
-        {
+        {    
             return await _repositoryWrapper.Pokupatel.FindAll();
         }
         public async Task<Pokupatel> GetById(int id)
