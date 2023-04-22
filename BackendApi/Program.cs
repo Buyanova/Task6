@@ -17,9 +17,9 @@ namespace BackendApi
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddDbContext<ИнтернетмагазинContext>(
+            builder.Services.AddDbContext<InternetStoreContext>(
                 optionsAction: options => options.UseSqlServer(
-                    connectionString: "Server= LAPTOP-2TNGE6GH ;Database= Интернет-магазин; Trusted_Connection=True;"));
+                    connectionString: "Server= LAPTOP-2TNGE6GH ;Database= Internet-store; Trusted_Connection=True;"));
             builder.Services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc("v1", new OpenApiInfo
