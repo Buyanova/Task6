@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Domain.Interfaces
-{
+{ 
     public interface IRepositoryBase<T>
     {
         Task<List<T>> FindAll();

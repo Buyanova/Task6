@@ -9,5 +9,5 @@ namespace Domain.Interfaces
 {
     public interface ITovarRepisitory : IRepositoryBase<Tovar>
     {
-    }
+    } 
 }

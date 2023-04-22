@@ -10,4 +10,4 @@ namespace Domain.Interfaces
     public interface ICorzinaRepisitory : IRepositoryBase<Corzina>
     {
     }
-}
+} 

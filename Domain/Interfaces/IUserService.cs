@@ -8,7 +8,7 @@ using Domain.Models;
 namespace Domain.Interfaces
 {
     public interface IUserService
-    {
+    { 
         Task<List<Pokupatel>> GetAll();
         Task<Pokupatel> GetById(int id);
         Task Create(Pokupatel mkodel);
