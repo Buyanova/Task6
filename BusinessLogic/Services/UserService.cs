@@ -1,7 +1,7 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
 namespace BusinessLogic.Services
-{
+{ 
     public class UserService : IUserService
     {
         private IRepositoryWrapper _repositoryWrapper;
