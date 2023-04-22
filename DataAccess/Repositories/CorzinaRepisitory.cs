@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace DataAccess.Repositories
 {
     public class CorzinaRepisitory : RepositoryBase<Corzina>, ICorzinaRepisitory
-    {   
+    {
         public CorzinaRepisitory(ИнтернетмагазинContext repositoryContext)
             : base(repositoryContext)
         {

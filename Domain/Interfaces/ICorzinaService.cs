@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Domain.Interfaces
-{ 
+{
     public interface ICorzinaService
     {
         Task<List<Corzina>> GetAll();

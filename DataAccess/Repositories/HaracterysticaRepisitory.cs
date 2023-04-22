@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace DataAccess.Repositories
 {
     public class HaracterysticaRepisitory : RepositoryBase<HaracterysticaTovarov>, IHaracterysticaRepisitory
-    {   
+    {
         public HaracterysticaRepisitory(ИнтернетмагазинContext repositoryContext)
             : base(repositoryContext)
         {

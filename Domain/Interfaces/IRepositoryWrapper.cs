@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Domain.Interfaces;
 
 namespace Domain.Interfaces
-{ 
+{
     public interface IRepositoryWrapper
     {
         IUserRepository Pokupatel { get; }

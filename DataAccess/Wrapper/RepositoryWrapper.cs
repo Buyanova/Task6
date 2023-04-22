@@ -8,7 +8,7 @@ using DataAccess.Repositories;
 using Domain.Models;
 
 namespace DataAccess.Wrapper
-{   
+{
     public class RepositoryWrapper : IRepositoryWrapper
     {
         private ИнтернетмагазинContext _repoContext;

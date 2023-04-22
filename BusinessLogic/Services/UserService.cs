@@ -1,7 +1,7 @@
 ﻿using Domain.Interfaces;
 using Domain.Models;
 namespace BusinessLogic.Services
-{ 
+{
     public class UserService : IUserService
     {
         private IRepositoryWrapper _repositoryWrapper;
@@ -10,7 +10,7 @@ namespace BusinessLogic.Services
             _repositoryWrapper = repositoryWrapper;
         }
         public async Task<List<Pokupatel>> GetAll()
-        {    
+        {
             return await _repositoryWrapper.Pokupatel.FindAll();
         }
         public async Task<Pokupatel> GetById(int id)

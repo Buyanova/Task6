@@ -7,9 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace BusinessLogic.Services
-{ 
+{
      public class TovarService : ITovarService
-        {     
+        {
             private IRepositoryWrapper _repositoryWrapper;
             public TovarService(IRepositoryWrapper repositoryWrapper)
             {

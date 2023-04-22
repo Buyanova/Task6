@@ -12,10 +12,10 @@ namespace BackendApi.Controllers
     [Route(template: "api/[controller]")]
     [ApiController]
     public class CorzinaController : ControllerBase
-    {   
+    {
         private ICorzinaService _a;
         public CorzinaController(ICorzinaService d)
-        {    
+        {
             _a = d;
         }
         /// <summary>
