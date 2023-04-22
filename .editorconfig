@@ -1,8 +1,5 @@
 
 [*.cs]
-#### ����� ���������� ####
-
-# ������� ����������
 
 dotnet_naming_rule.interface_should_be_begins_with_i.severity = suggestion
 dotnet_naming_rule.interface_should_be_begins_with_i.symbols = interface
@@ -16,8 +13,7 @@ dotnet_naming_rule.non_field_members_should_be_pascal_case.severity = suggestion
 dotnet_naming_rule.non_field_members_should_be_pascal_case.symbols = non_field_members
 dotnet_naming_rule.non_field_members_should_be_pascal_case.style = pascal_case
 
-# ������������ ��������
-     
+
 dotnet_naming_symbols.interface.applicable_kinds = interface
 dotnet_naming_symbols.interface.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
 dotnet_naming_symbols.interface.required_modifiers = 
@@ -30,7 +26,6 @@ dotnet_naming_symbols.non_field_members.applicable_kinds = property, event, meth
 dotnet_naming_symbols.non_field_members.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
 dotnet_naming_symbols.non_field_members.required_modifiers = 
 
-# ����� ����������
 
 dotnet_naming_style.begins_with_i.required_prefix = I
 dotnet_naming_style.begins_with_i.required_suffix = 
@@ -73,52 +68,6 @@ csharp_prefer_simple_using_statement = true:suggestion
 csharp_prefer_braces = true:silent
 
 [*.vb]
-#### ����� ���������� ####
-
-# ������� ����������
-
-dotnet_naming_rule.interface_should_be_����������_�_i.severity = suggestion
-dotnet_naming_rule.interface_should_be_����������_�_i.symbols = interface
-dotnet_naming_rule.interface_should_be_����������_�_i.style = ����������_�_i
-
-dotnet_naming_rule.����_should_be_�����������������������.severity = suggestion
-dotnet_naming_rule.����_should_be_�����������������������.symbols = ����
-dotnet_naming_rule.����_should_be_�����������������������.style = �����������������������
-
-dotnet_naming_rule.��_����������_�����_�����_should_be_�����������������������.severity = suggestion
-dotnet_naming_rule.��_����������_�����_�����_should_be_�����������������������.symbols = ��_����������_�����_�����
-dotnet_naming_rule.��_����������_�����_�����_should_be_�����������������������.style = �����������������������
-
-# ������������ ��������
-
-dotnet_naming_symbols.interface.applicable_kinds = interface
-dotnet_naming_symbols.interface.applicable_accessibilities = public, friend, private, protected, protected_friend, private_protected
-dotnet_naming_symbols.interface.required_modifiers = 
-
-dotnet_naming_symbols.����.applicable_kinds = class, struct, interface, enum
-dotnet_naming_symbols.����.applicable_accessibilities = public, friend, private, protected, protected_friend, private_protected
-dotnet_naming_symbols.����.required_modifiers = 
-
-dotnet_naming_symbols.��_����������_�����_�����.applicable_kinds = property, event, method
-dotnet_naming_symbols.��_����������_�����_�����.applicable_accessibilities = public, friend, private, protected, protected_friend, private_protected
-dotnet_naming_symbols.��_����������_�����_�����.required_modifiers = 
-
-# ����� ����������
-
-dotnet_naming_style.����������_�_i.required_prefix = I
-dotnet_naming_style.����������_�_i.required_suffix = 
-dotnet_naming_style.����������_�_i.word_separator = 
-dotnet_naming_style.����������_�_i.capitalization = pascal_case
-
-dotnet_naming_style.�����������������������.required_prefix = 
-dotnet_naming_style.�����������������������.required_suffix = 
-dotnet_naming_style.�����������������������.word_separator = 
-dotnet_naming_style.�����������������������.capitalization = pascal_case
-
-dotnet_naming_style.�����������������������.required_prefix = 
-dotnet_naming_style.�����������������������.required_suffix = 
-dotnet_naming_style.�����������������������.word_separator = 
-dotnet_naming_style.�����������������������.capitalization = pascal_case
 
 [*.{cs,vb}]
 dotnet_style_operator_placement_when_wrapping = beginning_of_line
