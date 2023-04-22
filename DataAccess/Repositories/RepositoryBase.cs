@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 namespace DataAccess.Repositories
 {
     public abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
-    {
+    { 
         protected ИнтернетмагазинContext RepositoryContext { get; set; }
         public RepositoryBase(ИнтернетмагазинContext repositoryContxt)
         {

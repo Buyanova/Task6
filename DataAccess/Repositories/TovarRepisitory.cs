@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace DataAccess.Repositories
 {
     public class TovarRepisitory : RepositoryBase<Tovar>, ITovarRepisitory
-    {
+    { 
         public TovarRepisitory(ИнтернетмагазинContext repositoryContext)
             : base(repositoryContext)
         {

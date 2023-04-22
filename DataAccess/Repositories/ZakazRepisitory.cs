@@ -13,6 +13,6 @@ namespace DataAccess.Repositories
         public ZakazRepisitory(ИнтернетмагазинContext repositoryContext)
             : base(repositoryContext)
         {
-        }
+        } 
     }
 }

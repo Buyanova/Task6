@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BusinessLogic.Services
+namespace BusinessLogic.Services  
 {   
     public class CorzinaService : ICorzinaService
     {
