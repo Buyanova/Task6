@@ -77,17 +77,17 @@ csharp_prefer_braces = true:silent
 
 # ѕравила именовани€
 
-dotnet_naming_rule.interface_should_be_начинаетс€_с_i.severity = suggestion
-dotnet_naming_rule.interface_should_be_начинаетс€_с_i.symbols = interface
-dotnet_naming_rule.interface_should_be_начинаетс€_с_i.style = начинаетс€_с_i
+dotnet_naming_rule.interface_should_be_start_with_i.severity = suggestion
+dotnet_naming_rule.interface_should_be_start_with_i.symbols = interface
+dotnet_naming_rule.interface_should_be_start_with_i.style = start_with_i
 
-dotnet_naming_rule.типы_should_be_всечастиспрописнойбуквы.severity = suggestion
-dotnet_naming_rule.типы_should_be_всечастиспрописнойбуквы.symbols = типы
-dotnet_naming_rule.типы_should_be_всечастиспрописнойбуквы.style = всечастиспрописнойбуквы
+dotnet_naming_rule.types_should_be_allpartsarecapitalized.severity = suggestion
+dotnet_naming_rule.types_should_be_allpartsarecapitalized.symbols = types
+dotnet_naming_rule.types_should_be_allpartsarecapitalized.style = allpartsarecapitalized
 
-dotnet_naming_rule.не_€вл€ющиес€_полем_члены_should_be_всечастиспрописнойбуквы.severity = suggestion
-dotnet_naming_rule.не_€вл€ющиес€_полем_члены_should_be_всечастиспрописнойбуквы.symbols = не_€вл€ющиес€_полем_члены
-dotnet_naming_rule.не_€вл€ющиес€_полем_члены_should_be_всечастиспрописнойбуквы.style = всечастиспрописнойбуквы
+dotnet_naming_rule.not_being_a_member_field_should_be_allpartsarecapitalized.severity = suggestion
+dotnet_naming_rule.not_being_a_member_field_should_be_allpartsarecapitalized.symbols = not_being_a_member_field
+dotnet_naming_rule.not_being_a_member_field_should_be_allpartsarecapitalized.style = allpartsarecapitalized
 
 # —пецификации символов
 
@@ -95,30 +95,30 @@ dotnet_naming_symbols.interface.applicable_kinds = interface
 dotnet_naming_symbols.interface.applicable_accessibilities = public, friend, private, protected, protected_friend, private_protected
 dotnet_naming_symbols.interface.required_modifiers = 
 
-dotnet_naming_symbols.типы.applicable_kinds = class, struct, interface, enum
-dotnet_naming_symbols.типы.applicable_accessibilities = public, friend, private, protected, protected_friend, private_protected
-dotnet_naming_symbols.типы.required_modifiers = 
+dotnet_naming_symbols.types.applicable_kinds = class, struct, interface, enum
+dotnet_naming_symbols.types.applicable_accessibilities = public, friend, private, protected, protected_friend, private_protected
+dotnet_naming_symbols.types.required_modifiers = 
 
-dotnet_naming_symbols.не_€вл€ющиес€_полем_члены.applicable_kinds = property, event, method
-dotnet_naming_symbols.не_€вл€ющиес€_полем_члены.applicable_accessibilities = public, friend, private, protected, protected_friend, private_protected
-dotnet_naming_symbols.не_€вл€ющиес€_полем_члены.required_modifiers = 
+dotnet_naming_symbols.not_being_a_member_field.applicable_kinds = property, event, method
+dotnet_naming_symbols.not_being_a_member_field.applicable_accessibilities = public, friend, private, protected, protected_friend, private_protected
+dotnet_naming_symbols.not_being_a_member_field.required_modifiers = 
 
 # —тили именовани€
 
-dotnet_naming_style.начинаетс€_с_i.required_prefix = I
-dotnet_naming_style.начинаетс€_с_i.required_suffix = 
-dotnet_naming_style.начинаетс€_с_i.word_separator = 
-dotnet_naming_style.начинаетс€_с_i.capitalization = pascal_case
+dotnet_naming_style.start_with_i.required_prefix = I
+dotnet_naming_style.start_with_i.required_suffix = 
+dotnet_naming_style.start_with_i.word_separator = 
+dotnet_naming_style.start_with_i.capitalization = pascal_case
 
-dotnet_naming_style.всечастиспрописнойбуквы.required_prefix = 
-dotnet_naming_style.всечастиспрописнойбуквы.required_suffix = 
-dotnet_naming_style.всечастиспрописнойбуквы.word_separator = 
-dotnet_naming_style.всечастиспрописнойбуквы.capitalization = pascal_case
+dotnet_naming_style.allpartsarecapitalized.required_prefix = 
+dotnet_naming_style.allpartsarecapitalized.required_suffix = 
+dotnet_naming_style.allpartsarecapitalized.word_separator = 
+dotnet_naming_style.allpartsarecapitalized.capitalization = pascal_case
 
-dotnet_naming_style.всечастиспрописнойбуквы.required_prefix = 
-dotnet_naming_style.всечастиспрописнойбуквы.required_suffix = 
-dotnet_naming_style.всечастиспрописнойбуквы.word_separator = 
-dotnet_naming_style.всечастиспрописнойбуквы.capitalization = pascal_case
+dotnet_naming_style.allpartsarecapitalized.required_prefix = 
+dotnet_naming_style.allpartsarecapitalized.required_suffix = 
+dotnet_naming_style.allpartsarecapitalized.word_separator = 
+dotnet_naming_style.allpartsarecapitalized.capitalization = pascal_case
 
 [*.{cs,vb}]
 dotnet_style_operator_placement_when_wrapping = beginning_of_line
