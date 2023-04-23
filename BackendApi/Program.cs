@@ -8,16 +8,16 @@ using Microsoft.OpenApi.Models;
 using System.Reflection;
 
 namespace BackendApi
-{ 
+{
     public class Program
-    { 
+    {
         public static void Main(string[] args)
         {
 
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddDbContext<InternetStoreContext>(
+            builder.Services.AddDbContext<InternetstoreContext>(
                 optionsAction: options => options.UseSqlServer(
                     connectionString: "Server= LAPTOP-2TNGE6GH ;Database= Internet-store; Trusted_Connection=True;"));
             builder.Services.AddSwaggerGen(options =>
@@ -72,6 +72,9 @@ namespace BackendApi
             app.MapControllers();
 
             app.Run();
+
+            
+
         }
     }
 }

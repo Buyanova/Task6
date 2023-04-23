@@ -27,13 +27,48 @@ namespace BusinessLogic.Services
         }
         public async Task Create(HaracterysticaTovarov model)
         {
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
+            if (string.IsNullOrEmpty(model.NameKategorii))
+            {
+                throw new ArgumentException(nameof(model.NameKategorii));
+            }
+
+            if (string.IsNullOrEmpty(model.Proizvoditel))
+            {
+                throw new ArgumentException(nameof(model.Proizvoditel));
+            }
+
+            if (string.IsNullOrEmpty(model.StranaProizvoditelya))
+            {
+                throw new ArgumentException(nameof(model.StranaProizvoditelya));
+            }
+
+            if (string.IsNullOrEmpty(model.Brend))
+            {
+                throw new ArgumentException(nameof(model.Brend));
+            }
+
+            if (string.IsNullOrEmpty(model.Material))
+            {
+                throw new ArgumentException(nameof(model.Material));
+            }
+
+            if (string.IsNullOrEmpty(model.Rasmer))
+            {
+                throw new ArgumentException(nameof(model.Rasmer));
+            }
+
             await _repositoryWrapper.Haracterystica.Create(model);
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.Save();
         }
         public async Task Update(HaracterysticaTovarov model)
         {
-            _repositoryWrapper.Haracterystica.Update(model);
-            _repositoryWrapper.Save();
+            await _repositoryWrapper.Haracterystica.Update(model);
+            await _repositoryWrapper.Save();
         }
         public async Task Delete(int id)
         {
