@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace BusinessLogic.Services
 {
     public class ZakazService : IZakazService
-    { 
+    {
         private IRepositoryWrapper _repositoryWrapper;
         public ZakazService(IRepositoryWrapper repositoryWrapper)
         {

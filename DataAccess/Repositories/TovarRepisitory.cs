@@ -10,7 +10,7 @@ namespace DataAccess.Repositories
 {
     public class TovarRepisitory : RepositoryBase<Tovar>, ITovarRepisitory
     {
-        public TovarRepisitory(InternetstoreContext repositoryContext)
+        public TovarRepisitory(InternetStoreContext repositoryContext)
             : base(repositoryContext)
         {
         }

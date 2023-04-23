@@ -16,8 +16,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решен
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{114FA21A-550D-47DD-AE2B-0BE7048C797C}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,12 +41,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{B93EC259-CCF9-4ACD-8443-1B1E9528251A} = {114FA21A-550D-47DD-AE2B-0BE7048C797C}
-		{9382D546-D7F2-45EE-920B-04E5413587E7} = {114FA21A-550D-47DD-AE2B-0BE7048C797C}
-		{8BA35B43-2953-485E-B5C3-7FE0C2DF582C} = {114FA21A-550D-47DD-AE2B-0BE7048C797C}
-		{4742182F-7D3B-46DB-A1C3-FBF6221805E0} = {114FA21A-550D-47DD-AE2B-0BE7048C797C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4A059EE7-A694-451F-8385-18EC3A17C193}

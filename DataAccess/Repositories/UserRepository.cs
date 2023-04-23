@@ -10,7 +10,7 @@ namespace DataAccess.Repositories
 {
     public class UserRepository : RepositoryBase<Pokupatel>, IUserRepository
     {
-        public UserRepository(InternetstoreContext repositoryContext)
+        public UserRepository(InternetStoreContext repositoryContext)
             : base(repositoryContext)
         {
         }

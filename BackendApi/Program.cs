@@ -11,70 +11,20 @@ namespace BackendApi
 {
     public class Program
     {
-        public static void Main(string[] args)
-        {
-
-            var builder = WebApplication.CreateBuilder(args);
-
-            // Add services to the container.
-            builder.Services.AddDbContext<InternetstoreContext>(
-                optionsAction: options => options.UseSqlServer(
-                    connectionString: "Server= LAPTOP-2TNGE6GH ;Database= Internet-store; Trusted_Connection=True;"));
-            builder.Services.AddSwaggerGen(options =>
-            {
-                options.SwaggerDoc("v1", new OpenApiInfo
+        /*
+                public override bool Equals(object? obj)
                 {
-                    Version = "v1",
-                    Title = "Интернет-магазин API",
-                    Description = "Краткое описание вашего API",
-                    Contact = new OpenApiContact
-                    {
-                        Name = "Пример контакта",
-                        Url = new Uri("https://example.com/contact")
-                    },
-                    License = new OpenApiLicense
-                    {
-                        Name = "Пример лицензии",
-                        Url = new Uri("https://example.com/license")
-                    }
-                });
+                    return base.Equals(obj);
+                }
 
-                var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
-            });
+                public override int GetHashCode()
+                {
+                    return base.GetHashCode();
+                }
 
-            builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
-            builder.Services.AddScoped<IUserService, UserService>();
-            builder.Services.AddScoped<IHaracterysticaService, HaracterysticaService>();
-            builder.Services.AddScoped<ITovarService, TovarService>();
-            builder.Services.AddScoped<ICorzinaService, CorzinaService>();
-            builder.Services.AddScoped<IZakazService, ZakazService>();
-
-            builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
-
-            var app = builder.Build();
-
-            // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
-
-            app.UseHttpsRedirection();
-
-            app.UseAuthorization();
-
-
-            app.MapControllers();
-
-            app.Run();
-
-            
-
-        }
+                public override string? ToString()
+                {
+                    return base.ToString();
+                }*/
     }
 }

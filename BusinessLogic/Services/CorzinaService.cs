@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace BusinessLogic.Services
-{ 
+{
     public class CorzinaService : ICorzinaService
     {
         private IRepositoryWrapper _repositoryWrapper;
@@ -28,19 +28,19 @@ namespace BusinessLogic.Services
         public async Task Create(Corzina model)
         {
             await _repositoryWrapper.Corzina.Create(model);
-            await _repositoryWrapper.Save();
+            _repositoryWrapper.Save();
         }
         public async Task Update(Corzina model)
         {
-            await _repositoryWrapper.Corzina.Update(model);
-            await _repositoryWrapper.Save();
+            _repositoryWrapper.Corzina.Update(model);
+            _repositoryWrapper.Save();
         }
         public async Task Delete(int id, int id1)
         {
             var user = await _repositoryWrapper.Corzina
             .FindByCondition(x => x.IdZakaz == id && x.IdTovara == id1);
-            await _repositoryWrapper.Corzina.Delete(user.First());
-            await _repositoryWrapper.Save();
+            _repositoryWrapper.Corzina.Delete(user.First());
+            _repositoryWrapper.Save();
         }
     }
 }
