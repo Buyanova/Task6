@@ -1,8 +1,8 @@
 
 [*.cs]
-#### Стили именования ####
+#### Naming Styles ####
 
-# Правила именования
+# Naming rules
 
 dotnet_naming_rule.interface_should_be_begins_with_i.severity = suggestion
 dotnet_naming_rule.interface_should_be_begins_with_i.symbols = interface
@@ -16,7 +16,7 @@ dotnet_naming_rule.non_field_members_should_be_pascal_case.severity = suggestion
 dotnet_naming_rule.non_field_members_should_be_pascal_case.symbols = non_field_members
 dotnet_naming_rule.non_field_members_should_be_pascal_case.style = pascal_case
 
-# Спецификации символов
+# Character Specifications
 
 dotnet_naming_symbols.interface.applicable_kinds = interface
 dotnet_naming_symbols.interface.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
@@ -30,7 +30,7 @@ dotnet_naming_symbols.non_field_members.applicable_kinds = property, event, meth
 dotnet_naming_symbols.non_field_members.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
 dotnet_naming_symbols.non_field_members.required_modifiers = 
 
-# Стили именования
+# Naming Styles
 
 dotnet_naming_style.begins_with_i.required_prefix = I
 dotnet_naming_style.begins_with_i.required_suffix = 
@@ -73,9 +73,9 @@ csharp_prefer_simple_using_statement = true:suggestion
 csharp_prefer_braces = true:silent
 
 [*.vb]
-#### Стили именования ####
+#### Naming Styles ####
 
-# Правила именования
+# Naming rules
 
 dotnet_naming_rule.interface_should_be_start_with_i.severity = suggestion
 dotnet_naming_rule.interface_should_be_start_with_i.symbols = interface
@@ -89,7 +89,7 @@ dotnet_naming_rule.not_being_a_member_field_should_be_allpartsarecapitalized.sev
 dotnet_naming_rule.not_being_a_member_field_should_be_allpartsarecapitalized.symbols = not_being_a_member_field
 dotnet_naming_rule.not_being_a_member_field_should_be_allpartsarecapitalized.style = allpartsarecapitalized
 
-# Спецификации символов
+# Character Specifications
 
 dotnet_naming_symbols.interface.applicable_kinds = interface
 dotnet_naming_symbols.interface.applicable_accessibilities = public, friend, private, protected, protected_friend, private_protected
@@ -103,7 +103,7 @@ dotnet_naming_symbols.not_being_a_member_field.applicable_kinds = property, even
 dotnet_naming_symbols.not_being_a_member_field.applicable_accessibilities = public, friend, private, protected, protected_friend, private_protected
 dotnet_naming_symbols.not_being_a_member_field.required_modifiers = 
 
-# Стили именования
+# Naming Styles
 
 dotnet_naming_style.start_with_i.required_prefix = I
 dotnet_naming_style.start_with_i.required_suffix = 
