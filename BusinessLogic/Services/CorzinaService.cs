@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace BusinessLogic.Services
-{
+{ 
     public class CorzinaService : ICorzinaService
     {
         private IRepositoryWrapper _repositoryWrapper;
