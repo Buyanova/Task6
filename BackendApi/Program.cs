@@ -17,24 +17,24 @@ namespace BackendApi
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddDbContext<ИнтернетмагазинContext>(
+            builder.Services.AddDbContext<InternetStoreContext>(
                 optionsAction: options => options.UseSqlServer(
-                    connectionString: "Server= LAPTOP-2TNGE6GH ;Database= Интернет-магазин; Trusted_Connection=True;"));
+                    connectionString: "Server= LAPTOP-2TNGE6GH ;Database= Internet-store; Trusted_Connection=True;"));
             builder.Services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "Интернет-магазин API",
-                    Description = "Краткое описание вашего API",
+                    Title = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅпїЅпїЅ API",
+                    Description = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ API",
                     Contact = new OpenApiContact
                     {
-                        Name = "Пример контакта",
+                        Name = "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
                         Url = new Uri("https://example.com/contact")
                     },
                     License = new OpenApiLicense
                     {
-                        Name = "Пример лицензии",
+                        Name = "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
                         Url = new Uri("https://example.com/license")
                     }
                 });
@@ -73,7 +73,7 @@ namespace BackendApi
 
             app.Run();
 
-            
+
 
         }
     }

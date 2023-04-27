@@ -10,7 +10,7 @@ namespace DataAccess.Repositories
 {
     public class ZakazRepisitory : RepositoryBase<Zakaz>, IZakazRepisitory
     {
-        public ZakazRepisitory(ИнтернетмагазинContext repositoryContext)
+        public ZakazRepisitory(InternetStoreContext repositoryContext)
             : base(repositoryContext)
         {
         }
