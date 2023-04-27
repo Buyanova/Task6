@@ -22,11 +22,4 @@
     <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <EditorConfigFiles Remove="E:\Практика\Учебная практика\3 курс\6_Добавление процесса непрерывной интеграции в репозиторий\BackendApi\BackendApi\.editorconfig" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EditorConfigFiles Remove="E:\Практика\Учебная практика\3 курс\6_Добавление процесса непрерывной интеграции в репозиторий\BackendApi\BackendApi\.editorconfig" />
-  </ItemGroup>
 </Project>
