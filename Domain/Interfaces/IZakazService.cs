@@ -16,4 +16,3 @@ namespace Domain.Interfaces
         Task Delete(int idz);
     }
 }
-//

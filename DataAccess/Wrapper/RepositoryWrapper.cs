@@ -11,7 +11,7 @@ namespace DataAccess.Wrapper
 {
     public class RepositoryWrapper : IRepositoryWrapper
     {
-        private InternetStoreContext _repoContext;
+        private IContext _repoContext;
 
         private IUserRepository _pokupatel;
         public IUserRepository Pokupatel
@@ -77,7 +77,7 @@ namespace DataAccess.Wrapper
                 return _z;
             }
         }
-        public RepositoryWrapper(InternetStoreContext repositoryContext)
+        public RepositoryWrapper(IContext repositoryContext)
         {
             _repoContext = repositoryContext;
         }

@@ -17,7 +17,7 @@ namespace BackendApi
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddDbContext<InternetStoreContext>(
+            builder.Services.AddDbContext<IContext>(
                 optionsAction: options => options.UseSqlServer(
                     connectionString: "Server= LAPTOP-2TNGE6GH ;Database= Internet-store; Trusted_Connection=True;"));
             builder.Services.AddSwaggerGen(options =>
@@ -25,16 +25,16 @@ namespace BackendApi
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ API",
-                    Description = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ API",
+                    Title = "Internet-store API",
+                    Description = "Description ASP .NET Core Web API",
                     Contact = new OpenApiContact
                     {
-                        Name = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
+                        Name = "Ñontract example",
                         Url = new Uri("https://example.com/contact")
                     },
                     License = new OpenApiLicense
                     {
-                        Name = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
+                        Name = "License example",
                         Url = new Uri("https://example.com/license")
                     }
                 });

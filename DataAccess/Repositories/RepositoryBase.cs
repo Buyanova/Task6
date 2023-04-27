@@ -11,8 +11,8 @@ namespace DataAccess.Repositories
 {
     public abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {
-        protected InternetStoreContext RepositoryContext { get; set; }
-        public RepositoryBase(InternetStoreContext repositoryContxt)
+        protected IContext RepositoryContext { get; set; }
+        public RepositoryBase(IContext repositoryContxt)
         {
             RepositoryContext = repositoryContxt;
         }
