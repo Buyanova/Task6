@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Domain.Interfaces
 {
     public interface IZakazService
-    {
+    {//
         Task<List<Zakaz>> GetAll();
         Task<Zakaz> GetById(int idz, int idp);
         Task Create(Zakaz mkodel);
