@@ -10,7 +10,7 @@ namespace DataAccess.Repositories
 {
     public class HaracterysticaRepisitory : RepositoryBase<HaracterysticaTovarov>, IHaracterysticaRepisitory
     {
-        public HaracterysticaRepisitory(IContext repositoryContext)
+        public HaracterysticaRepisitory(ИнтернетмагазинContext repositoryContext)
             : base(repositoryContext)
         {
         }

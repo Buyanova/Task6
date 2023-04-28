@@ -10,7 +10,7 @@ namespace DataAccess.Repositories
 {
     public class CorzinaRepisitory : RepositoryBase<Corzina>, ICorzinaRepisitory
     {
-        public CorzinaRepisitory(IContext repositoryContext)
+        public CorzinaRepisitory(ИнтернетмагазинContext repositoryContext)
             : base(repositoryContext)
         {
         }

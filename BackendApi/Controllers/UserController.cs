@@ -35,7 +35,7 @@ namespace BackendApi.Controllers
         public async Task<IActionResult> GetById(int id)
         {
             var result = await _pokupatelService.GetById(id);
-            
+
             var response = result.Adapt<GetUserResponse>(); // библиотека Mapster
 
             return Ok(response);

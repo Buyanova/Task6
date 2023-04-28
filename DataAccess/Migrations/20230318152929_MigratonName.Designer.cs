@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DataAccess.Migrations
 {
-    [DbContext(typeof(IContext))]
+    [DbContext(typeof(ИнтернетмагазинContext))]
     [Migration("20230318152929_MigratonName")]
     partial class MigratonName
     {
