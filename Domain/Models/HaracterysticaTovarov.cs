@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Domain.Models
 {
-    public class HaracterysticaTovarov
+    public partial class HaracterysticaTovarov
     {
         public HaracterysticaTovarov()
         {

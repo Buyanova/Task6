@@ -17,24 +17,24 @@ namespace BackendApi
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddDbContext <���������������Context > (
+            builder.Services.AddDbContext <InternetstoreContext> (
                  optionsAction: options => options.UseSqlServer(
-                     connectionString: "Server= LAPTOP-2TNGE6GH ;Database= ��������-�������; Trusted_Connection=True;"));
+                     connectionString: "Server= LAPTOP-2TNGE6GH ;Database= Internet-store; Trusted_Connection=True;"));
             builder.Services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "��������-������� API",
-                    Description = "������� �������� ������ API",
+                    Title = "Internet-store API",
+                    Description = "Decription ASP .Net Core Web API",
                     Contact = new OpenApiContact
                     {
-                        Name = "������ ��������",
+                        Name = "Contacts example",
                         Url = new Uri("https://example.com/contact")
                     },
                     License = new OpenApiLicense
                     {
-                        Name = "������ ��������",
+                        Name = "License exampl",
                         Url = new Uri("https://example.com/license")
                     }
                 });

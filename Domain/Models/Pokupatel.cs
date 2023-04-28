@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Domain.Models
 {
-    public class Pokupatel
+    public partial class Pokupatel
     {
         public int IdPokupatel { get; set; }
         public string Fio { get; set; } = null!;

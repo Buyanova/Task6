@@ -1,8 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Domain.Models
 {
-    public class Zakaz
+    public partial class Zakaz
     {
         public int IdZakaz { get; set; }
         public int IdPokupatel { get; set; }

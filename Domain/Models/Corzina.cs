@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Domain.Models
 {
-    public class Corzina
+    public partial class Corzina
     {
         public int IdZakaz { get; set; }
         public int IdTovara { get; set; }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Domain.Models
 {
-    public class Tovar
+    public partial class Tovar
     {
         public Tovar()
         {
