@@ -17,7 +17,7 @@ namespace BackendApi
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddDbContext <InternetstoreContext> (
+            builder.Services.AddDbContext<InternetstoreContext>(
                  optionsAction: options => options.UseSqlServer(
                      connectionString: "Server= LAPTOP-2TNGE6GH ;Database= Internet-store; Trusted_Connection=True;"));
             builder.Services.AddSwaggerGen(options =>
